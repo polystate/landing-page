@@ -1,0 +1,85 @@
+:root {
+  --main-margin: 160px;
+  --section-margin: 5rem;
+  --gap-margin: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Header Section*/
+
+header {
+  background-color: #1f2937;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: calc(var(--main-margin) - 32px);
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: var(--gap-margin);
+  margin-top: 0.5rem;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: var(--main-margin);
+}
+
+.nav-item:first-child p {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+nav a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+header p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+#header-sub > button {
+  background-color: #3882f6;
+  border: none;
+  color: #f9faf8;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  margin-bottom: var(--section-margin);
+}
+
+/*Header Content*/
+
+#header-content {
+  display: flex;
+  margin: var(--section-margin) var(--main-margin) var(--section-margin)
+    var(--main-margin);
+  gap: var(--gap-margin);
+}
+
+img {
+  margin-bottom: var(--section-margin);
+}

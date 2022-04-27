@@ -2,6 +2,7 @@
   --main-margin: 160px;
   --section-margin: 5rem;
   --gap-margin: 2rem;
+  --figure-dimension: 150px;
 }
 
 * {
@@ -38,7 +39,7 @@ header {
   color: #f9faf8;
 }
 
-nav a {
+.secondary-text {
   font-size: 18px;
   color: #e5e7eb;
   text-decoration: none;
@@ -46,11 +47,6 @@ nav a {
 
 nav a:hover {
   color: white;
-}
-
-header p {
-  font-size: 18px;
-  color: #e5e7eb;
 }
 
 h1 {
@@ -75,11 +71,117 @@ h1 {
 
 #header-content {
   display: flex;
-  margin: var(--section-margin) var(--main-margin) var(--section-margin)
-    var(--main-margin);
+  margin: var(--section-margin) var(--main-margin) 0 var(--main-margin);
   gap: var(--gap-margin);
 }
 
-img {
+#header-content img {
   margin-bottom: var(--section-margin);
+  height: 220px;
+  width: 650px;
+}
+
+/*Second Section*/
+
+#img-captions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-captions figure {
+  margin: var(--gap-margin);
+}
+
+#img-captions img {
+  margin: auto;
+  width: var(--figure-dimension);
+  height: var(--figure-dimension);
+  border: 5px solid #3882f6;
+  border-radius: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2.75rem;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+
+figcaption {
+  width: var(--figure-dimension);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(87, 87, 87);
+}
+
+/*Third Section*/
+
+#third-sect {
+  background-color: #e5e7eb;
+  padding: 7rem;
+}
+
+/* #third-sect figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+} */
+
+blockquote > p {
+  text-align: center;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+#third-sect figcaption {
+  font-size: 24px;
+  float: right;
+  margin-right: var(--gap-margin);
+}
+
+/*Fourth Section*/
+
+#fourth-sect {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 4rem 0;
+}
+
+h3 {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+#signup-product {
+  background-color: #3882f6;
+  width: 100%;
+  margin: 0 var(--main-margin);
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#fourth-sect button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #1f2937;
+  padding: var(--gap-margin) 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
